@@ -1,0 +1,51 @@
+.container {
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	width: 100%;
+	background-color: transparent;
+	border-left-width: 2px;
+	transition: border-color 0.3s ease;
+}
+
+/* Removed background hover effect */
+.container:hover .name {
+	color: rgb(var(--accent-color));
+}
+
+.selected {
+	border-left-color: rgb(var(--accent-color));
+}
+
+.unselected {
+	border-left-color: transparent;
+}
+
+.input {
+	color: inherit;
+}
+
+.name {
+	color: inherit;
+	transition: color 0.2s ease;
+}
+
+.subtext {
+	opacity: 0.5;
+}
+
+.label {
+	opacity: 0.7;
+}
+
+.icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	color: rgba(var(--primary-color), 0.8);
+	transition: color 0.2s ease;
+}
+
+.icon:hover {
+	color: rgb(var(--accent-color));
+}

@@ -1,0 +1,15 @@
+.tab {
+	margin-left: 10px;
+	text-align: right;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s ease;
+}
+
+.tab:hover {
+	color: rgb(var(--accent-color));
+}
+
+.activeTab {
+	border-bottom: 2px solid rgb(var(--accent-color));
+}

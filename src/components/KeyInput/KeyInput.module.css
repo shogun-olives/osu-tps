@@ -1,0 +1,20 @@
+.inputBox {
+	cursor: pointer;
+	text-align: right;
+	border: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s ease;
+	background: transparent;
+	color: rgb(var(--secondary-color));
+	width: 100px;
+}
+
+.inputBox:hover {
+	color: rgb(var(--accent-color));
+}
+
+.inputBox:focus {
+	color: rgb(var(--accent-color));
+	border-bottom: 2px solid rgb(var(--accent-color));
+	outline: none;
+}

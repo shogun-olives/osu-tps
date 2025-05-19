@@ -1,0 +1,52 @@
+/* Full wrapper across screen */
+.wrapper {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* Left box taking 25% of screen */
+.leftPanel {
+	width: 330px;
+	background-color: rgba(var(--secondary-color), 0.03);
+	display: flex;
+	padding: 20px 10%;
+}
+
+/* Selection bar next to the left panel */
+.selectionBar {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60px;
+}
+
+/* Sliding selection bar */
+.indicator {
+	position: absolute;
+	left: 0;
+	width: 4px;
+	height: 100px;
+	background-color: rgb(var(--accent-color));
+	border-radius: 2px;
+	transition: top 0.3s ease;
+	z-index: 1;
+}
+
+/* Item container */
+.menuItem {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.label {
+	transform: rotate(90deg);
+	white-space: nowrap;
+}

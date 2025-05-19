@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+	font-family: "JetBrains Mono", monospace;
+	box-sizing: border-box;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--bg-color: 18, 18, 18;
+	--secondary-color: 255, 255, 255;
+	--accent-color: 112, 183, 126;
+}
+
+/* Remove arrows from number input (Chrome, Safari, Edge, Opera) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: None;
+}
+
+h1 {
+	font-size: 40px; /* Tailwind's text-4xl */
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 23px; /* Tailwind's text-3xl */
+	font-weight: 200;
+}
+
+h3 {
+	font-size: 18px; /* Tailwind's text-2xl */
+	font-weight: 150;
+	border-bottom: 2px solid;
+	margin-bottom: 10px;
+}
+
+input {
+	padding: 0px;
+	cursor: pointer;
+	border: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s ease;
+	background: transparent;
+	color: rgb(var(--secondary-color));
+	width: 100px;
+	border-radius: 0;
+}
+
+input:hover {
+	color: rgb(var(--accent-color));
+}
+
+input:focus {
+	color: rgb(var(--accent-color));
+	border-bottom: 2px solid rgb(var(--accent-color));
+	outline: none;
+}
+
+.custom-scroll {
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE/Edge */
+}
+.custom-scroll::-webkit-scrollbar {
+	display: none; /* Chrome, Safari */
+}

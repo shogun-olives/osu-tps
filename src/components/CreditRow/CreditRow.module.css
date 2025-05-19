@@ -1,0 +1,24 @@
+.creditRow {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.creditIcon {
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+}
+
+.creditUsername {
+	margin-left: auto;
+	color: rgb(var(--primary-color));
+	transition: color 0.3s ease;
+}
+
+/* On hover over username (and row since whole row is clickable), animate color */
+.creditRow:hover .creditUsername {
+	color: rgb(var(--accent-color));
+}
